@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+   
+    <style>
+        
+*
+{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+  background-image: url("background-img.jpeg");
+  background-size: 100%, 100%;
+}
+.menu-bar
+{
+    background-color: rgb(0, 100, 0);
+    text-align: center;
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+
+.menu-bar ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-bar ul li:hover
+{
+    background: #2bab0d;
+    border-radius: 5px; 
+}
+.Active
+{
+    background: #2bab0d;
+    border-radius: 5px;
+
+}
+
+.sub-menu-1
+{
+    display: none;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.arrow
+{
+    height: 30px;
+    margin-left: 85px;
+    display: inline-block;
+    margin-top: -100px;
+}
+
+ </style>
+</head>
+<body>
+        <div class="menu-bar">
+            <ul>
+                <li class="Active"><a href="">Home</a></li>
+                <li><a href="">About Us</a>
+                
+                    <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="">Mission</a></li><hr/>
+                                <li><a href="">Vision</a></li><hr/>
+                                <li><a href="">Team</a></li>
+                            </ul>
+                    </div>
+                </li>
+
+                <li><a href="">Services</a>
+                   
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">Web Designing</li><hr/>
+                            <li><a href="">Marketing</a></li><hr/>
+                            <li><a href="">Mobile App</a><img src="./arrow-angle-pointing-to-right.png" class="arrow"/></li>
+                        </ul>
+                     </div>
+
+                </li>
+
+                    
+
+                <li><a href="">Clients</a></li>
+
+                <li><a href="">Invester</a></li>
+
+                <li><a href="">Pricing</a></li>
+
+                <li><a href="">Training</a></li>
+
+                <li><a href="">Contact</a></li>
+
+
+            </ul>
+
+        </div>    
+</body>
+</html>
